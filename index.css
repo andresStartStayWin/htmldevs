@@ -1,4 +1,3 @@
-/* Reset de estilos para evitar comportamientos no deseados */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +23,8 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+
+    
 }
 
 .project {
@@ -32,6 +33,11 @@ main {
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
 }
 
 .project h2 {
@@ -51,24 +57,9 @@ main {
 .responsive-sheet {
     width: 100%;
     height: 0;
-    padding-bottom: 75%; /* Proporción 4:3 para emular la apariencia de una hoja de cálculo */
+    padding-bottom: 30%; /* Ajusta esta proporción según tu widget */
     position: relative;
-}
-
-.responsive-sheet iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
-.responsive-sheet {
-    width: 100%;
-    height: 0;
-    padding-bottom: 30%;
-    position: relative;
-    margin-top: 2rem; /* Agrega margen superior */
+    margin-top: 2rem;
 }
 
 .responsive-sheet iframe {
@@ -79,9 +70,3 @@ main {
     top: 0;
     left: 0;
 }
-Asegúrate de reemplazar los estilos padding-bottom con el valor que necesites para la proporción adecuada de tu widget de Google Sheets. En este caso, he usado 16:9 como ejemplo. Además, el margin-top agrega un margen superior al widget para separarlo del contenido anterior. Puedes ajustar este valor según tus necesidades.
-
-
-
-
-
