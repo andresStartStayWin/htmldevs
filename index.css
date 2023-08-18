@@ -81,7 +81,7 @@ main {
 
 .responsive-sheet iframe {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: auto;
     border: none;
     top: 0;
