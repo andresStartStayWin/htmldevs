@@ -74,15 +74,15 @@ main {
 .responsive-sheet {
     width: 100%;
     height: 0;
-    padding-bottom: 30%; /* Ajusta esta proporción según tu widget */
+    padding-bottom: 100%; /* Ajusta esta proporción según tu widget */
     position: relative;
     margin-top: 2rem;
 }
 
 .responsive-sheet iframe {
     position: absolute;
-    width: auto;
-    height: auto;
+    width: 90%;
+    height: 100dvh;
     border: none;
     top: 0;
     left: 0;
