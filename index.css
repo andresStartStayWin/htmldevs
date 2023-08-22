@@ -75,7 +75,7 @@ main {
 .responsive-sheet {
     width: 100%;
     height: 100%;
-    padding-bottom: ; /* Ajusta esta proporción según tu widget */
+    padding-bottom: 0; /* Ajusta esta proporción según tu widget */
     position: relative;
     margin-top: 2rem;
 }
